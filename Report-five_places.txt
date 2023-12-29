@@ -1,0 +1,36 @@
+Shortest path from each node to each other:
+Shortest paths from source A:
+Distance A -> A: 0
+Distance A -> B: 80
+Distance A -> C: 55
+Distance A -> D: 63
+Distance A -> E: 65
+
+Shortest paths from source B:
+Distance B -> A: 79
+Distance B -> B: 0
+Distance B -> C: 58
+Distance B -> D: 23
+Distance B -> E: 25
+
+Shortest paths from source C:
+Distance C -> A: 81
+Distance C -> B: 26
+Distance C -> C: 0
+Distance C -> D: 49
+Distance C -> E: 23
+
+Shortest paths from source D:
+Distance D -> A: 56
+Distance D -> B: 43
+Distance D -> C: 35
+Distance D -> D: 0
+Distance D -> E: 2
+
+Shortest paths from source E:
+Distance E -> A: 96
+Distance E -> B: 89
+Distance E -> C: 63
+Distance E -> D: 90
+Distance E -> E: 0
+
