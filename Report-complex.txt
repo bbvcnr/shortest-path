@@ -1,4 +1,5 @@
-Shortest path from each node to each other:
+Constraints:
+
 Shortest paths from source A:
 Distance A -> A: 0
 Distance A -> B: 14

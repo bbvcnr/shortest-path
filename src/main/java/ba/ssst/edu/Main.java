@@ -33,13 +33,14 @@ public class Main {
 
         apb = createGraph("all_places_b.txt", 15);
         saveToReport(apb, "all_places_b");
+
     }
     public static void loadPlaces(){
         File file = new File("places.txt");
 
         try {
             Scanner s1 = new Scanner(file);
-            if(s1.hasNextLine())s1.nextLine();
+            if (s1.hasNextLine()) s1.nextLine();
 
             while (s1.hasNextLine()){
                 String line = s1.nextLine();
@@ -52,7 +53,7 @@ public class Main {
             }
             s1.close();
         }catch (Exception e){
-            System.out.println(e);;
+            System.out.println(e);
         }
     }
     public static Graph createGraph(String file, int n) {
@@ -84,13 +85,11 @@ public class Main {
     }
     public static void saveToReport(Graph g, String filename) throws IOException {
         FileWriter fw = new FileWriter("Report-" + filename + ".txt");
-        fw.write("Shortest path from each node to each other:\n");
         ShortestPath dijkstra = new ShortestPath();
-        for (int i = 0; i < g.nodes; i++) {
-            dijkstra.shortestPath(g, (char) (i + 65));
-            fw.write(String.valueOf(dijkstra.report));
-            dijkstra.report.setLength(0);
-        }
+        fw.write("Constraints:\n");
+        dijkstra.dijkstraWithConstraints(g,Constraints.getConstraints());
+        fw.write(String.valueOf(ShortestPath.report));
+        ShortestPath.report.setLength(0);
         fw.close();
     }
     public static void loadConstraints(){
@@ -113,7 +112,7 @@ public class Main {
             }
             s1.close();
         }catch (Exception e){
-            System.out.println(e);;
+            System.out.println(e);
         }
     }
 

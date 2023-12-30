@@ -5,8 +5,7 @@ import java.util.*;
 public class ShortestPath {
     public static StringBuilder report = new StringBuilder();
     private static final int infinity = 1000000;
-    public void shortestPath(Graph graph, char source) {
-        report.setLength(0);
+    public static void shortestPath(Graph graph, char source) {
         PriorityQueue<Graph.Node> minHeap = new PriorityQueue<>(Comparator.comparingInt(node -> node.weight));
         Map<Character, Integer> distance = new HashMap<>();
         Map<Character, Character> parent = new HashMap<>();
@@ -24,7 +23,7 @@ public class ShortestPath {
             minHeap.add(new Graph.Node(nodeChar, nodeChar, distance.get(nodeChar)));
         }
 
-        applyConstraints(graph,Constraints.getConstraints());
+        //applyConstraints(graph,Constraints.getConstraints());
         while (!minHeap.isEmpty()) {
             Graph.Node currNode = minHeap.poll();
             char u = currNode.destination;
@@ -32,6 +31,13 @@ public class ShortestPath {
             LinkedList<Graph.Node> list = graph.adjacencylist[u-65];
             for (Graph.Node neighbor : list) {
                 char v = neighbor.destination;
+
+                /*if (neighbor.weight == -1) {
+                    graph.disablePath(u, v);
+                    report.append("Node does not exist.\n");
+                    continue;
+                }*/
+
                 int alt = distance.get(u) + neighbor.weight;
                 if (alt < distance.get(v)) {
                     distance.put(v, alt);
@@ -52,9 +58,10 @@ public class ShortestPath {
         report.append("\n");
     }
 
-    public static void applyConstraints(Graph graph, ArrayList<Constraints> constraints){
+    public static Graph applyConstraints(Graph graph, ArrayList<Constraints> constraints){
         double random = Math.random();
-
+        Graph withConstraints = new Graph(graph.nodes);
+        withConstraints.copyGraph(graph);
         for (Constraints constraint: constraints) {
             char csource = constraint.getSource();
             char cdestination = constraint.getDestination();
@@ -62,11 +69,23 @@ public class ShortestPath {
             int indexdest = cdestination - 65;
 
             if (indexsrc < graph.nodes && indexdest < graph.nodes) {
-                if (random < constraint.getProbability()) {
-                    graph.disablePath(csource, cdestination);
-                    report.append("Path from ").append(csource).append(" to ").append(cdestination).append(" is disabled.\n");
+                if (random < constraint.getProbability() && random != 0) {
+                    withConstraints.disablePath(csource, cdestination);
+                    report.append("Path from ").append(csource).append(" to ").append(cdestination).append(" is disabled due to ");
+                    if (Objects.equals(constraint.getConstraint(), "foggy")) report.append("fog.\n");
+                    else report.append(constraint.getConstraint()).append(".\n");
                 }
             }
+        }
+        report.append("\n");
+        return withConstraints;
+    }
+
+    public void dijkstraWithConstraints(Graph graph, ArrayList<Constraints> constraints){
+        Graph g = new Graph(graph.nodes);
+        g = applyConstraints(graph, constraints);
+        for (int i=0; i< graph.nodes; i++){
+            shortestPath(graph, (char) (i + 65));
         }
     }
 

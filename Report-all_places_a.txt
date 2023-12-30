@@ -1,4 +1,6 @@
-Shortest path from each node to each other:
+Constraints:
+Path from B to D is disabled due to fog.
+
 Shortest paths from source A:
 Distance A -> A: 0
 Distance A -> B: No path
@@ -16,18 +18,6 @@ Distance A -> M: No path
 Distance A -> N: No path
 Distance A -> O: No path
 
-Path from A to B is disabled.
-Path from B to D is disabled.
-Path from B to D is disabled.
-Path from C to I is disabled.
-Path from G to I is disabled.
-Path from L to O is disabled.
-Path from N to M is disabled.
-Path from K to I is disabled.
-Path from K to L is disabled.
-Path from K to D is disabled.
-Path from E to F is disabled.
-Path from E to F is disabled.
 Shortest paths from source B:
 Distance B -> A: 7
 Distance B -> B: 0
@@ -45,44 +35,37 @@ Distance B -> M: No path
 Distance B -> N: No path
 Distance B -> O: No path
 
-Path from B to D is disabled.
-Path from N to M is disabled.
-Path from K to I is disabled.
-Path from K to L is disabled.
-Path from K to D is disabled.
-Path from E to F is disabled.
 Shortest paths from source C:
-Distance C -> A: No path
-Distance C -> B: No path
+Distance C -> A: 315
+Distance C -> B: 308
 Distance C -> C: 0
 Distance C -> D: 97
 Distance C -> E: 25
 Distance C -> F: 34
 Distance C -> G: 150
 Distance C -> H: 160
-Distance C -> I: No path
+Distance C -> I: 214
 Distance C -> J: 152
 Distance C -> K: 196
 Distance C -> L: 251
-Distance C -> M: 248
+Distance C -> M: 240
 Distance C -> N: 177
 Distance C -> O: No path
 
-Path from B to D is disabled.
 Shortest paths from source D:
-Distance D -> A: No path
-Distance D -> B: No path
+Distance D -> A: 218
+Distance D -> B: 211
 Distance D -> C: 159
 Distance D -> D: 0
 Distance D -> E: 174
 Distance D -> F: 148
 Distance D -> G: 53
 Distance D -> H: 63
-Distance D -> I: No path
+Distance D -> I: 117
 Distance D -> J: 55
 Distance D -> K: 99
 Distance D -> L: 154
-Distance D -> M: 151
+Distance D -> M: 143
 Distance D -> N: 80
 Distance D -> O: No path
 
@@ -103,7 +86,6 @@ Distance E -> M: No path
 Distance E -> N: No path
 Distance E -> O: No path
 
-Path from B to D is disabled.
 Shortest paths from source F:
 Distance F -> A: No path
 Distance F -> B: No path
@@ -122,45 +104,39 @@ Distance F -> N: No path
 Distance F -> O: No path
 
 Shortest paths from source G:
-Distance G -> A: No path
-Distance G -> B: No path
+Distance G -> A: 165
+Distance G -> B: 158
 Distance G -> C: 121
 Distance G -> D: 77
 Distance G -> E: 146
 Distance G -> F: 107
 Distance G -> G: 0
 Distance G -> H: 140
-Distance G -> I: No path
+Distance G -> I: 64
 Distance G -> J: 132
 Distance G -> K: 176
 Distance G -> L: 113
-Distance G -> M: 228
+Distance G -> M: 90
 Distance G -> N: 39
 Distance G -> O: No path
 
 Shortest paths from source H:
-Distance H -> A: No path
-Distance H -> B: No path
+Distance H -> A: 411
+Distance H -> B: 404
 Distance H -> C: 96
 Distance H -> D: 193
 Distance H -> E: 121
 Distance H -> F: 130
 Distance H -> G: 246
 Distance H -> H: 0
-Distance H -> I: No path
+Distance H -> I: 310
 Distance H -> J: 248
 Distance H -> K: 292
 Distance H -> L: 347
-Distance H -> M: 344
+Distance H -> M: 336
 Distance H -> N: 273
 Distance H -> O: No path
 
-Path from B to D is disabled.
-Path from N to M is disabled.
-Path from K to I is disabled.
-Path from K to L is disabled.
-Path from K to D is disabled.
-Path from E to F is disabled.
 Shortest paths from source I:
 Distance I -> A: 101
 Distance I -> B: 94
@@ -178,17 +154,16 @@ Distance I -> M: 26
 Distance I -> N: 108
 Distance I -> O: No path
 
-Path from B to D is disabled.
 Shortest paths from source J:
-Distance J -> A: No path
-Distance J -> B: No path
+Distance J -> A: 249
+Distance J -> B: 242
 Distance J -> C: 107
 Distance J -> D: 31
 Distance J -> E: 119
 Distance J -> F: 93
 Distance J -> G: 84
 Distance J -> H: 94
-Distance J -> I: No path
+Distance J -> I: 148
 Distance J -> J: 0
 Distance J -> K: 44
 Distance J -> L: 99
@@ -196,67 +171,50 @@ Distance J -> M: 96
 Distance J -> N: 25
 Distance J -> O: No path
 
-Path from A to B is disabled.
-Path from B to D is disabled.
-Path from C to I is disabled.
-Path from L to O is disabled.
-Path from N to M is disabled.
-Path from K to I is disabled.
-Path from K to L is disabled.
-Path from K to D is disabled.
-Path from E to F is disabled.
-Path from E to F is disabled.
 Shortest paths from source K:
-Distance K -> A: No path
-Distance K -> B: No path
-Distance K -> C: 96
+Distance K -> A: 282
+Distance K -> B: 275
+Distance K -> C: 74
 Distance K -> D: 110
 Distance K -> E: 75
 Distance K -> F: 82
-Distance K -> G: 139
+Distance K -> G: 117
 Distance K -> H: 56
-Distance K -> I: No path
+Distance K -> I: 181
 Distance K -> J: 79
 Distance K -> K: 0
-Distance K -> L: 88
+Distance K -> L: 66
 Distance K -> M: 175
 Distance K -> N: 14
 Distance K -> O: No path
 
 Shortest paths from source L:
-Distance L -> A: No path
-Distance L -> B: No path
+Distance L -> A: 216
+Distance L -> B: 209
 Distance L -> C: 8
 Distance L -> D: 105
 Distance L -> E: 33
 Distance L -> F: 42
 Distance L -> G: 51
 Distance L -> H: 168
-Distance L -> I: No path
+Distance L -> I: 115
 Distance L -> J: 160
 Distance L -> K: 204
 Distance L -> L: 0
-Distance L -> M: 256
+Distance L -> M: 141
 Distance L -> N: 90
 Distance L -> O: No path
 
-Path from B to D is disabled.
-Path from L to O is disabled.
-Path from N to M is disabled.
-Path from K to I is disabled.
-Path from K to L is disabled.
-Path from K to D is disabled.
-Path from E to F is disabled.
 Shortest paths from source M:
-Distance M -> A: No path
-Distance M -> B: No path
+Distance M -> A: 354
+Distance M -> B: 347
 Distance M -> C: 39
 Distance M -> D: 136
 Distance M -> E: 64
 Distance M -> F: 73
 Distance M -> G: 189
 Distance M -> H: 199
-Distance M -> I: No path
+Distance M -> I: 253
 Distance M -> J: 191
 Distance M -> K: 235
 Distance M -> L: 290
@@ -264,38 +222,37 @@ Distance M -> M: 0
 Distance M -> N: 216
 Distance M -> O: No path
 
-Path from B to D is disabled.
 Shortest paths from source N:
-Distance N -> A: No path
-Distance N -> B: No path
+Distance N -> A: 290
+Distance N -> B: 283
 Distance N -> C: 82
 Distance N -> D: 179
 Distance N -> E: 107
 Distance N -> F: 68
 Distance N -> G: 125
 Distance N -> H: 242
-Distance N -> I: No path
+Distance N -> I: 189
 Distance N -> J: 234
 Distance N -> K: 278
 Distance N -> L: 74
-Distance N -> M: 330
+Distance N -> M: 215
 Distance N -> N: 0
 Distance N -> O: No path
 
 Shortest paths from source O:
-Distance O -> A: No path
-Distance O -> B: No path
+Distance O -> A: 346
+Distance O -> B: 339
 Distance O -> C: 31
 Distance O -> D: 128
 Distance O -> E: 56
 Distance O -> F: 65
 Distance O -> G: 181
 Distance O -> H: 191
-Distance O -> I: No path
+Distance O -> I: 245
 Distance O -> J: 183
 Distance O -> K: 227
 Distance O -> L: 282
-Distance O -> M: 279
+Distance O -> M: 271
 Distance O -> N: 208
 Distance O -> O: 0
 
