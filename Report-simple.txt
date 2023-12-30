@@ -1,0 +1,16 @@
+Shortest path from each node to each other:
+Shortest paths from source A:
+Distance A -> A: 0
+Distance A -> B: 10
+Distance A -> C: 30
+
+Shortest paths from source B:
+Distance B -> A: 25
+Distance B -> B: 0
+Distance B -> C: 20
+
+Shortest paths from source C:
+Distance C -> A: 5
+Distance C -> B: 15
+Distance C -> C: 0
+

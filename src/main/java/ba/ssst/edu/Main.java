@@ -3,12 +3,12 @@ package ba.ssst.edu;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Map;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws IOException {
         loadPlaces();
+        loadConstraints();
         Graph apa = new Graph(15);
         Graph apb = new Graph(15);
         Graph complex = new Graph(3);
@@ -19,19 +19,26 @@ public class Main {
         fiveplaces = createGraph("five_places.txt", 5);
         saveToReport(fiveplaces, "five_places");
 
+        tenplaces = createGraph("ten_places.txt", 15);
+        saveToReport(tenplaces, "ten_places");
+
         complex = createGraph("complex.txt", 3);
         saveToReport(complex, "complex");
 
-       /* simple = createGraph("simple.txt", 3);
+        simple = createGraph("simple.txt", 3);
         saveToReport(simple, "simple");
-        */
-    }
 
+        apa = createGraph("all_places_a.txt", 15);
+        saveToReport(apa, "all_places_a");
+
+        apb = createGraph("all_places_b.txt", 15);
+        saveToReport(apb, "all_places_b");
+    }
     public static void loadPlaces(){
-        File input = new File("places.txt");
+        File file = new File("places.txt");
 
         try {
-            Scanner s1 = new Scanner(input);
+            Scanner s1 = new Scanner(file);
             if(s1.hasNextLine())s1.nextLine();
 
             while (s1.hasNextLine()){
@@ -54,7 +61,6 @@ public class Main {
         try {
             File f1 = new File(file);
             Scanner s1 = new Scanner(f1);
-            if (s1.hasNextLine()) s1.nextLine();
 
             while (s1.hasNextLine()) {
                 try {
@@ -76,7 +82,6 @@ public class Main {
         }
         return graph;
     }
-
     public static void saveToReport(Graph g, String filename) throws IOException {
         FileWriter fw = new FileWriter("Report-" + filename + ".txt");
         fw.write("Shortest path from each node to each other:\n");
@@ -88,4 +93,28 @@ public class Main {
         }
         fw.close();
     }
+    public static void loadConstraints(){
+        File file = new File("constraints.txt");
+
+        try {
+            Scanner s1 = new Scanner(file);
+            if(s1.hasNextLine())s1.nextLine();
+
+            while (s1.hasNextLine()){
+                String line = s1.nextLine();
+                String[] lineParts = line.split(",");
+
+                char source = lineParts[0].charAt(0);
+                char destination = lineParts[1].charAt(0);
+                String constraint = lineParts[2].trim();
+                Double probability = Double.parseDouble(lineParts[3]);
+
+                Constraints constraintLine = new Constraints(source,destination,constraint,probability);
+            }
+            s1.close();
+        }catch (Exception e){
+            System.out.println(e);;
+        }
+    }
+
 }

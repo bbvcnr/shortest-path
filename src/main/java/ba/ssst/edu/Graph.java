@@ -39,4 +39,10 @@ class Graph {
             }
         }
     }
+
+    public void disablePath(char source, char destination) {
+        int index = source - 65;
+        adjacencylist[index].removeIf(node -> node.destination == destination);
+    }
+
 }

@@ -12,11 +12,9 @@ public class Places {
         this.shortcode = shortcode;
         this.location = location;
     }
-
     public static void add(char shortcode, String location) {
         placesMap.put(shortcode, location);
     }
-
     public static Map<Character, String> getPlacesMap() {
         return placesMap;
     }

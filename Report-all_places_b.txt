@@ -1,0 +1,332 @@
+Shortest path from each node to each other:
+Shortest paths from source A:
+Distance A -> A: 0
+Distance A -> B: 70
+Distance A -> C: 78
+Distance A -> D: 36
+Distance A -> E: 53
+Distance A -> F: 20
+Distance A -> G: 147
+Distance A -> H: 117
+Distance A -> I: 97
+Distance A -> J: 50
+Distance A -> K: 47
+Distance A -> L: 59
+Distance A -> M: 46
+Distance A -> N: 64
+Distance A -> O: 32
+
+Path from A to B is disabled.
+Path from B to D is disabled.
+Path from B to D is disabled.
+Path from B to M is disabled.
+Path from C to I is disabled.
+Path from G to I is disabled.
+Path from L to O is disabled.
+Path from N to M is disabled.
+Path from K to I is disabled.
+Path from K to L is disabled.
+Path from K to D is disabled.
+Path from E to F is disabled.
+Path from E to F is disabled.
+Shortest paths from source B:
+Distance B -> A: 130
+Distance B -> B: 0
+Distance B -> C: 42
+Distance B -> D: 101
+Distance B -> E: 2
+Distance B -> F: 85
+Distance B -> G: 115
+Distance B -> H: 131
+Distance B -> I: 60
+Distance B -> J: 13
+Distance B -> K: 59
+Distance B -> L: 82
+Distance B -> M: 81
+Distance B -> N: 97
+Distance B -> O: 97
+
+Path from B to D is disabled.
+Shortest paths from source C:
+Distance C -> A: 164
+Distance C -> B: 99
+Distance C -> C: 0
+Distance C -> D: 82
+Distance C -> E: 99
+Distance C -> F: 66
+Distance C -> G: 193
+Distance C -> H: 163
+Distance C -> I: 143
+Distance C -> J: 96
+Distance C -> K: 93
+Distance C -> L: 123
+Distance C -> M: 92
+Distance C -> N: 110
+Distance C -> O: 78
+
+Path from A to B is disabled.
+Path from B to D is disabled.
+Path from B to D is disabled.
+Path from C to I is disabled.
+Path from G to I is disabled.
+Path from L to O is disabled.
+Path from N to M is disabled.
+Path from K to I is disabled.
+Path from K to L is disabled.
+Path from K to D is disabled.
+Path from E to F is disabled.
+Path from E to F is disabled.
+Shortest paths from source D:
+Distance D -> A: 175
+Distance D -> B: 45
+Distance D -> C: 42
+Distance D -> D: 0
+Distance D -> E: 47
+Distance D -> F: 108
+Distance D -> G: 160
+Distance D -> H: 176
+Distance D -> I: 105
+Distance D -> J: 58
+Distance D -> K: 104
+Distance D -> L: 127
+Distance D -> M: 125
+Distance D -> N: 95
+Distance D -> O: 90
+
+Path from B to D is disabled.
+Shortest paths from source E:
+Distance E -> A: 128
+Distance E -> B: 66
+Distance E -> C: 40
+Distance E -> D: 99
+Distance E -> E: 0
+Distance E -> F: 83
+Distance E -> G: 113
+Distance E -> H: 129
+Distance E -> I: 58
+Distance E -> J: 11
+Distance E -> K: 57
+Distance E -> L: 80
+Distance E -> M: 79
+Distance E -> N: 127
+Distance E -> O: 95
+
+Path from B to D is disabled.
+Shortest paths from source F:
+Distance F -> A: 98
+Distance F -> B: 50
+Distance F -> C: 58
+Distance F -> D: 16
+Distance F -> E: 33
+Distance F -> F: 0
+Distance F -> G: 127
+Distance F -> H: 97
+Distance F -> I: 77
+Distance F -> J: 30
+Distance F -> K: 27
+Distance F -> L: 57
+Distance F -> M: 26
+Distance F -> N: 44
+Distance F -> O: 12
+
+Path from B to D is disabled.
+Path from L to O is disabled.
+Path from N to M is disabled.
+Path from K to I is disabled.
+Path from K to L is disabled.
+Path from K to D is disabled.
+Path from E to F is disabled.
+Shortest paths from source G:
+Distance G -> A: 166
+Distance G -> B: 77
+Distance G -> C: 51
+Distance G -> D: 61
+Distance G -> E: 79
+Distance G -> F: 83
+Distance G -> G: 0
+Distance G -> H: 16
+Distance G -> I: 125
+Distance G -> J: 90
+Distance G -> K: 95
+Distance G -> L: 102
+Distance G -> M: 92
+Distance G -> N: 71
+Distance G -> O: 57
+
+Path from B to D is disabled.
+Path from N to M is disabled.
+Path from K to I is disabled.
+Path from K to L is disabled.
+Path from K to D is disabled.
+Path from E to F is disabled.
+Shortest paths from source H:
+Distance H -> A: 158
+Distance H -> B: 107
+Distance H -> C: 35
+Distance H -> D: 83
+Distance H -> E: 93
+Distance H -> F: 67
+Distance H -> G: 30
+Distance H -> H: 0
+Distance H -> I: 137
+Distance H -> J: 90
+Distance H -> K: 87
+Distance H -> L: 124
+Distance H -> M: 93
+Distance H -> N: 101
+Distance H -> O: 79
+
+Shortest paths from source I:
+Distance I -> A: 138
+Distance I -> B: 8
+Distance I -> C: 50
+Distance I -> D: 67
+Distance I -> E: 10
+Distance I -> F: 93
+Distance I -> G: 55
+Distance I -> H: 71
+Distance I -> I: 0
+Distance I -> J: 21
+Distance I -> K: 67
+Distance I -> L: 22
+Distance I -> M: 89
+Distance I -> N: 95
+Distance I -> O: 63
+
+Path from B to D is disabled.
+Path from L to O is disabled.
+Path from N to M is disabled.
+Path from K to I is disabled.
+Path from K to L is disabled.
+Path from K to D is disabled.
+Path from E to F is disabled.
+Shortest paths from source J:
+Distance J -> A: 131
+Distance J -> B: 55
+Distance J -> C: 43
+Distance J -> D: 88
+Distance J -> E: 3
+Distance J -> F: 72
+Distance J -> G: 102
+Distance J -> H: 118
+Distance J -> I: 47
+Distance J -> J: 0
+Distance J -> K: 60
+Distance J -> L: 69
+Distance J -> M: 68
+Distance J -> N: 116
+Distance J -> O: 84
+
+Path from A to B is disabled.
+Path from B to D is disabled.
+Path from B to D is disabled.
+Path from B to M is disabled.
+Path from C to I is disabled.
+Path from G to I is disabled.
+Path from L to O is disabled.
+Path from N to M is disabled.
+Path from K to I is disabled.
+Path from K to L is disabled.
+Path from K to D is disabled.
+Path from E to F is disabled.
+Path from E to F is disabled.
+Shortest paths from source K:
+Distance K -> A: 71
+Distance K -> B: 58
+Distance K -> C: 46
+Distance K -> D: 91
+Distance K -> E: 6
+Distance K -> F: 75
+Distance K -> G: 105
+Distance K -> H: 121
+Distance K -> I: 50
+Distance K -> J: 3
+Distance K -> K: 0
+Distance K -> L: 72
+Distance K -> M: 71
+Distance K -> N: 119
+Distance K -> O: 87
+
+Path from B to D is disabled.
+Shortest paths from source L:
+Distance L -> A: No path
+Distance L -> B: No path
+Distance L -> C: No path
+Distance L -> D: No path
+Distance L -> E: No path
+Distance L -> F: No path
+Distance L -> G: No path
+Distance L -> H: No path
+Distance L -> I: No path
+Distance L -> J: No path
+Distance L -> K: No path
+Distance L -> L: 0
+Distance L -> M: No path
+Distance L -> N: No path
+Distance L -> O: No path
+
+Path from A to B is disabled.
+Path from B to D is disabled.
+Path from B to D is disabled.
+Path from B to M is disabled.
+Path from C to I is disabled.
+Path from G to I is disabled.
+Path from L to O is disabled.
+Path from N to M is disabled.
+Path from K to I is disabled.
+Path from K to L is disabled.
+Path from K to D is disabled.
+Path from E to F is disabled.
+Path from E to F is disabled.
+Shortest paths from source M:
+Distance M -> A: 227
+Distance M -> B: 97
+Distance M -> C: 139
+Distance M -> D: 198
+Distance M -> E: 99
+Distance M -> F: 182
+Distance M -> G: 212
+Distance M -> H: 228
+Distance M -> I: 157
+Distance M -> J: 110
+Distance M -> K: 156
+Distance M -> L: 179
+Distance M -> M: 0
+Distance M -> N: 194
+Distance M -> O: 194
+
+Path from B to D is disabled.
+Shortest paths from source N:
+Distance N -> A: 136
+Distance N -> B: 6
+Distance N -> C: 48
+Distance N -> D: 107
+Distance N -> E: 8
+Distance N -> F: 91
+Distance N -> G: 121
+Distance N -> H: 137
+Distance N -> I: 66
+Distance N -> J: 19
+Distance N -> K: 65
+Distance N -> L: 88
+Distance N -> M: 87
+Distance N -> N: 0
+Distance N -> O: 103
+
+Shortest paths from source O:
+Distance O -> A: 109
+Distance O -> B: 38
+Distance O -> C: 46
+Distance O -> D: 4
+Distance O -> E: 40
+Distance O -> F: 112
+Distance O -> G: 123
+Distance O -> H: 139
+Distance O -> I: 68
+Distance O -> J: 41
+Distance O -> K: 38
+Distance O -> L: 45
+Distance O -> M: 35
+Distance O -> N: 32
+Distance O -> O: 0
+
