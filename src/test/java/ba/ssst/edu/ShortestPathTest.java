@@ -87,38 +87,4 @@ public class ShortestPathTest extends TestCase {
         assertEquals(expectedResults.trim(), ShortestPath.report.toString().trim());
     }
 
-  /*  public void testGraphWithNoConstraints() {
-        Main.loadPlaces();
-        Main.loadConstraints();
-
-        Graph graph = new Graph(3);
-        graph.addNode('A', 'B', 10);
-        graph.addNode('A', 'C', 5);
-        graph.addNode('C', 'B', 12);
-
-        ShortestPath dijkstra = new ShortestPath();
-        String actual = dijkstra.dijkstraWithConstraints(graph,Constraints.getConstraints());
-
-        String expected =
-                "Shortest paths from source A:\n" +
-                "Distance A -> A: 0\n" +
-                "Distance A -> B: 10\n" +
-                "Distance A -> C: 5\n" +
-                "\n" +
-                "Shortest paths from source B:\n" +
-                "Distance B -> A: -1, no path\n" +
-                "Distance B -> B: 0\n" +
-                "Distance B -> C: -1, no path\n" +
-                "\n" +
-                "Shortest paths from source C:\n" +
-                "Distance C -> A: -1, no path\n" +
-                "Distance C -> B: 12\n" +
-                "Distance C -> C: 0\n" +
-                "\n";
-        assertEquals(expected.trim(), actual.trim());
-    }
-
-
-   */
-
 }
