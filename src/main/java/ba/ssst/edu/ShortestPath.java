@@ -6,6 +6,12 @@ public class ShortestPath {
     public static StringBuilder report = new StringBuilder();
     private static final int infinity = 1000000;
     public static void shortestPath(Graph graph, char source) {
+        if (source<65 || source>=(65 + graph.nodes)){
+
+            report.append("Shortest paths from source ").append(source).append(": -1, nonexistent place in graph\n");
+            return;
+        }
+
         PriorityQueue<Graph.Node> minHeap = new PriorityQueue<>(Comparator.comparingInt(node -> node.weight));
         Map<Character, Integer> distance = new HashMap<>();
         Map<Character, Character> parent = new HashMap<>();
@@ -23,7 +29,6 @@ public class ShortestPath {
             minHeap.add(new Graph.Node(nodeChar, nodeChar, distance.get(nodeChar)));
         }
 
-        //applyConstraints(graph,Constraints.getConstraints());
         while (!minHeap.isEmpty()) {
             Graph.Node currNode = minHeap.poll();
             char u = currNode.destination;
@@ -31,12 +36,6 @@ public class ShortestPath {
             LinkedList<Graph.Node> list = graph.adjacencylist[u-65];
             for (Graph.Node neighbor : list) {
                 char v = neighbor.destination;
-
-                /*if (neighbor.weight == -1) {
-                    graph.disablePath(u, v);
-                    report.append("Node does not exist.\n");
-                    continue;
-                }*/
 
                 int alt = distance.get(u) + neighbor.weight;
                 if (alt < distance.get(v)) {
@@ -49,10 +48,17 @@ public class ShortestPath {
 
         report.append("Shortest paths from source ").append(source).append(":\n");
         for (char node : distance.keySet()) {
-            if (distance.get(node) == infinity) {
-                report.append("Distance ").append(source).append(" -> ").append(node).append(": No path\n");
-            } else {
-                report.append("Distance ").append(source).append(" -> ").append(node).append(": ").append(distance.get(node)).append("\n");
+            if (Places.exists(source) && Places.exists(node)) {
+                if (distance.get(node) == infinity || distance.get(node) < 0) {
+                    distance.put(node, -1);
+                    report.append("Distance ").append(source).append(" -> ").append(node).append(": ").append(distance.get(node)).append(", no path\n");
+                } else {
+                    report.append("Distance ").append(source).append(" -> ").append(node).append(": ").append(distance.get(node)).append("\n");
+                }
+            }
+            else {
+                distance.put(node, -1);
+                report.append("Distance ").append(source).append(" -> ").append(node).append(": ").append(distance.get(node)).append(", nonexistent place\n");
             }
         }
         report.append("\n");
@@ -89,4 +95,7 @@ public class ShortestPath {
         }
     }
 
+    public static void resetReport() {
+        report.setLength(0);
+    }
 }

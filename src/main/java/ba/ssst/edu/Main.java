@@ -19,7 +19,7 @@ public class Main {
         fiveplaces = createGraph("five_places.txt", 5);
         saveToReport(fiveplaces, "five_places");
 
-        tenplaces = createGraph("ten_places.txt", 15);
+        tenplaces = createGraph("ten_places.txt", 20);
         saveToReport(tenplaces, "ten_places");
 
         complex = createGraph("complex.txt", 3);
@@ -89,7 +89,7 @@ public class Main {
         fw.write("Constraints:\n");
         dijkstra.dijkstraWithConstraints(g,Constraints.getConstraints());
         fw.write(String.valueOf(ShortestPath.report));
-        ShortestPath.report.setLength(0);
+        ShortestPath.resetReport();
         fw.close();
     }
     public static void loadConstraints(){

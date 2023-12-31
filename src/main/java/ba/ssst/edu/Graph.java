@@ -35,11 +35,8 @@ class Graph {
     }
 
     public void addNode(char source, char destination, Integer weight) {
-        if (Places.exists(source) && Places.exists(destination)) {
             Node node = new Node(source, destination, weight);
             adjacencylist[source - 65].addFirst(node);
-        }
-        //else adjacencylist[source - 65].addFirst(new Node(source, destination, -1));
     }
     public void printGraph(){
         for (int i = 0; i <nodes ; i++) {

@@ -1,11 +1,5 @@
 Constraints:
 Path from B to D is disabled due to fog.
-Path from L to O is disabled due to high constructions.
-Path from N to M is disabled due to high constructions.
-Path from K to I is disabled due to fog.
-Path from K to L is disabled due to fog.
-Path from K to D is disabled due to fog.
-Path from E to F is disabled due to high constructions.
 
 Shortest paths from source A:
 Distance A -> A: 0
@@ -195,21 +189,21 @@ Distance K -> N: 119
 Distance K -> O: 87
 
 Shortest paths from source L:
-Distance L -> A: No path
-Distance L -> B: No path
-Distance L -> C: No path
-Distance L -> D: No path
-Distance L -> E: No path
-Distance L -> F: No path
-Distance L -> G: No path
-Distance L -> H: No path
-Distance L -> I: No path
-Distance L -> J: No path
-Distance L -> K: No path
+Distance L -> A: -1, no path
+Distance L -> B: -1, no path
+Distance L -> C: -1, no path
+Distance L -> D: -1, no path
+Distance L -> E: -1, no path
+Distance L -> F: -1, no path
+Distance L -> G: -1, no path
+Distance L -> H: -1, no path
+Distance L -> I: -1, no path
+Distance L -> J: -1, no path
+Distance L -> K: -1, no path
 Distance L -> L: 0
-Distance L -> M: No path
-Distance L -> N: No path
-Distance L -> O: No path
+Distance L -> M: -1, no path
+Distance L -> N: -1, no path
+Distance L -> O: -1, no path
 
 Shortest paths from source M:
 Distance M -> A: 227

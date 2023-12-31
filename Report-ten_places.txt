@@ -1,39 +1,58 @@
 Constraints:
+Path from A to B is disabled due to high constructions.
 Path from B to D is disabled due to fog.
+Path from C to I is disabled due to medics helicopter.
+Path from L to O is disabled due to high constructions.
+Path from N to M is disabled due to high constructions.
+Path from K to I is disabled due to fog.
+Path from K to L is disabled due to fog.
+Path from K to D is disabled due to fog.
+Path from E to F is disabled due to high constructions.
+Path from E to F is disabled due to medics helicopter.
 
 Shortest paths from source A:
 Distance A -> A: 0
-Distance A -> B: No path
-Distance A -> C: No path
-Distance A -> D: No path
-Distance A -> E: No path
-Distance A -> F: No path
-Distance A -> G: No path
-Distance A -> H: No path
-Distance A -> I: No path
-Distance A -> J: No path
-Distance A -> K: No path
-Distance A -> L: No path
-Distance A -> M: No path
-Distance A -> N: No path
-Distance A -> O: No path
+Distance A -> B: -1, no path
+Distance A -> C: -1, no path
+Distance A -> D: -1, no path
+Distance A -> E: -1, no path
+Distance A -> F: -1, no path
+Distance A -> G: -1, no path
+Distance A -> H: -1, no path
+Distance A -> I: -1, no path
+Distance A -> J: -1, no path
+Distance A -> K: -1, no path
+Distance A -> L: -1, no path
+Distance A -> M: -1, no path
+Distance A -> N: -1, no path
+Distance A -> O: -1, no path
+Distance A -> P: -1, nonexistent place
+Distance A -> Q: -1, nonexistent place
+Distance A -> R: -1, nonexistent place
+Distance A -> S: -1, nonexistent place
+Distance A -> T: -1, nonexistent place
 
 Shortest paths from source B:
-Distance B -> A: No path
+Distance B -> A: -1, no path
 Distance B -> B: 0
-Distance B -> C: No path
-Distance B -> D: No path
-Distance B -> E: No path
-Distance B -> F: No path
-Distance B -> G: No path
-Distance B -> H: No path
-Distance B -> I: No path
-Distance B -> J: No path
-Distance B -> K: No path
-Distance B -> L: No path
-Distance B -> M: No path
-Distance B -> N: No path
-Distance B -> O: No path
+Distance B -> C: -1, no path
+Distance B -> D: -1, no path
+Distance B -> E: -1, no path
+Distance B -> F: -1, no path
+Distance B -> G: -1, no path
+Distance B -> H: -1, no path
+Distance B -> I: -1, no path
+Distance B -> J: -1, no path
+Distance B -> K: -1, no path
+Distance B -> L: -1, no path
+Distance B -> M: -1, no path
+Distance B -> N: -1, no path
+Distance B -> O: -1, no path
+Distance B -> P: -1, nonexistent place
+Distance B -> Q: -1, nonexistent place
+Distance B -> R: -1, nonexistent place
+Distance B -> S: -1, nonexistent place
+Distance B -> T: -1, nonexistent place
 
 Shortest paths from source C:
 Distance C -> A: 174
@@ -47,48 +66,63 @@ Distance C -> H: 16
 Distance C -> I: 115
 Distance C -> J: 108
 Distance C -> K: 64
-Distance C -> L: No path
+Distance C -> L: 165
 Distance C -> M: 131
 Distance C -> N: 94
 Distance C -> O: 82
+Distance C -> P: -1, nonexistent place
+Distance C -> Q: -1, nonexistent place
+Distance C -> R: -1, nonexistent place
+Distance C -> S: -1, nonexistent place
+Distance C -> T: -1, nonexistent place
 
 Shortest paths from source D:
 Distance D -> A: 142
 Distance D -> B: 143
-Distance D -> C: 97
+Distance D -> C: 86
 Distance D -> D: 0
 Distance D -> E: 44
-Distance D -> F: 183
+Distance D -> F: 139
 Distance D -> G: 95
-Distance D -> H: 113
+Distance D -> H: 102
 Distance D -> I: 135
-Distance D -> J: 144
-Distance D -> K: 161
-Distance D -> L: No path
+Distance D -> J: 141
+Distance D -> K: 97
+Distance D -> L: 133
 Distance D -> M: 99
 Distance D -> N: 62
-Distance D -> O: 179
+Distance D -> O: 139
+Distance D -> P: -1, nonexistent place
+Distance D -> Q: -1, nonexistent place
+Distance D -> R: -1, nonexistent place
+Distance D -> S: -1, nonexistent place
+Distance D -> T: -1, nonexistent place
 
 Shortest paths from source E:
 Distance E -> A: 98
 Distance E -> B: 99
-Distance E -> C: 53
-Distance E -> D: 85
+Distance E -> C: 42
+Distance E -> D: 74
 Distance E -> E: 0
-Distance E -> F: 139
+Distance E -> F: 95
 Distance E -> G: 51
-Distance E -> H: 69
+Distance E -> H: 58
 Distance E -> I: 91
-Distance E -> J: 100
-Distance E -> K: 117
-Distance E -> L: No path
+Distance E -> J: 97
+Distance E -> K: 53
+Distance E -> L: 89
 Distance E -> M: 55
 Distance E -> N: 18
-Distance E -> O: 135
+Distance E -> O: 95
+Distance E -> P: -1, nonexistent place
+Distance E -> Q: -1, nonexistent place
+Distance E -> R: -1, nonexistent place
+Distance E -> S: -1, nonexistent place
+Distance E -> T: -1, nonexistent place
 
 Shortest paths from source F:
 Distance F -> A: 187
-Distance F -> B: 188
+Distance F -> B: 185
 Distance F -> C: 13
 Distance F -> D: 45
 Distance F -> E: 89
@@ -98,10 +132,15 @@ Distance F -> H: 29
 Distance F -> I: 42
 Distance F -> J: 121
 Distance F -> K: 77
-Distance F -> L: No path
+Distance F -> L: 141
 Distance F -> M: 144
 Distance F -> N: 107
 Distance F -> O: 95
+Distance F -> P: -1, nonexistent place
+Distance F -> Q: -1, nonexistent place
+Distance F -> R: -1, nonexistent place
+Distance F -> S: -1, nonexistent place
+Distance F -> T: -1, nonexistent place
 
 Shortest paths from source G:
 Distance G -> A: 176
@@ -115,64 +154,84 @@ Distance G -> H: 18
 Distance G -> I: 117
 Distance G -> J: 110
 Distance G -> K: 66
-Distance G -> L: No path
+Distance G -> L: 167
 Distance G -> M: 133
 Distance G -> N: 60
 Distance G -> O: 84
+Distance G -> P: -1, nonexistent place
+Distance G -> Q: -1, nonexistent place
+Distance G -> R: -1, nonexistent place
+Distance G -> S: -1, nonexistent place
+Distance G -> T: -1, nonexistent place
 
 Shortest paths from source H:
-Distance H -> A: No path
-Distance H -> B: No path
-Distance H -> C: No path
-Distance H -> D: No path
-Distance H -> E: No path
-Distance H -> F: No path
-Distance H -> G: No path
+Distance H -> A: 171
+Distance H -> B: 284
+Distance H -> C: 109
+Distance H -> D: 141
+Distance H -> E: 185
+Distance H -> F: 212
+Distance H -> G: 236
 Distance H -> H: 0
 Distance H -> I: 99
-Distance H -> J: No path
-Distance H -> K: No path
-Distance H -> L: No path
-Distance H -> M: No path
-Distance H -> N: No path
+Distance H -> J: 173
+Distance H -> K: 173
+Distance H -> L: 274
+Distance H -> M: 128
+Distance H -> N: 203
 Distance H -> O: 66
+Distance H -> P: -1, nonexistent place
+Distance H -> Q: -1, nonexistent place
+Distance H -> R: -1, nonexistent place
+Distance H -> S: -1, nonexistent place
+Distance H -> T: -1, nonexistent place
 
 Shortest paths from source I:
-Distance I -> A: No path
-Distance I -> B: No path
-Distance I -> C: No path
-Distance I -> D: No path
-Distance I -> E: No path
-Distance I -> F: No path
-Distance I -> G: No path
+Distance I -> A: 218
+Distance I -> B: 331
+Distance I -> C: 156
+Distance I -> D: 188
+Distance I -> E: 232
+Distance I -> F: 259
+Distance I -> G: 283
 Distance I -> H: 47
 Distance I -> I: 0
-Distance I -> J: No path
-Distance I -> K: No path
-Distance I -> L: No path
-Distance I -> M: No path
-Distance I -> N: No path
+Distance I -> J: 220
+Distance I -> K: 220
+Distance I -> L: 321
+Distance I -> M: 175
+Distance I -> N: 250
 Distance I -> O: 87
+Distance I -> P: -1, nonexistent place
+Distance I -> Q: -1, nonexistent place
+Distance I -> R: -1, nonexistent place
+Distance I -> S: -1, nonexistent place
+Distance I -> T: -1, nonexistent place
 
 Shortest paths from source J:
-Distance J -> A: 136
+Distance J -> A: 92
 Distance J -> B: 137
-Distance J -> C: 52
-Distance J -> D: 84
+Distance J -> C: 30
+Distance J -> D: 62
 Distance J -> E: 38
 Distance J -> F: 39
 Distance J -> G: 89
-Distance J -> H: 68
+Distance J -> H: 46
 Distance J -> I: 81
 Distance J -> J: 0
-Distance J -> K: 116
-Distance J -> L: No path
-Distance J -> M: 93
+Distance J -> K: 91
+Distance J -> L: 127
+Distance J -> M: 49
 Distance J -> N: 56
-Distance J -> O: 134
+Distance J -> O: 83
+Distance J -> P: -1, nonexistent place
+Distance J -> Q: -1, nonexistent place
+Distance J -> R: -1, nonexistent place
+Distance J -> S: -1, nonexistent place
+Distance J -> T: -1, nonexistent place
 
 Shortest paths from source K:
-Distance K -> A: 180
+Distance K -> A: 136
 Distance K -> B: 181
 Distance K -> C: 55
 Distance K -> D: 87
@@ -183,10 +242,15 @@ Distance K -> H: 71
 Distance K -> I: 84
 Distance K -> J: 44
 Distance K -> K: 0
-Distance K -> L: No path
-Distance K -> M: 137
+Distance K -> L: 171
+Distance K -> M: 93
 Distance K -> N: 100
-Distance K -> O: 137
+Distance K -> O: 127
+Distance K -> P: -1, nonexistent place
+Distance K -> Q: -1, nonexistent place
+Distance K -> R: -1, nonexistent place
+Distance K -> S: -1, nonexistent place
+Distance K -> T: -1, nonexistent place
 
 Shortest paths from source L:
 Distance L -> A: 188
@@ -204,55 +268,185 @@ Distance L -> L: 0
 Distance L -> M: 145
 Distance L -> N: 108
 Distance L -> O: 96
+Distance L -> P: -1, nonexistent place
+Distance L -> Q: -1, nonexistent place
+Distance L -> R: -1, nonexistent place
+Distance L -> S: -1, nonexistent place
+Distance L -> T: -1, nonexistent place
 
 Shortest paths from source M:
 Distance M -> A: 43
 Distance M -> B: 182
-Distance M -> C: 97
-Distance M -> D: 129
+Distance M -> C: 75
+Distance M -> D: 107
 Distance M -> E: 83
 Distance M -> F: 84
 Distance M -> G: 134
-Distance M -> H: 113
+Distance M -> H: 91
 Distance M -> I: 126
 Distance M -> J: 45
-Distance M -> K: 161
-Distance M -> L: No path
+Distance M -> K: 136
+Distance M -> L: 172
 Distance M -> M: 0
 Distance M -> N: 101
-Distance M -> O: 179
+Distance M -> O: 128
+Distance M -> P: -1, nonexistent place
+Distance M -> Q: -1, nonexistent place
+Distance M -> R: -1, nonexistent place
+Distance M -> S: -1, nonexistent place
+Distance M -> T: -1, nonexistent place
 
 Shortest paths from source N:
-Distance N -> A: No path
+Distance N -> A: -1, no path
 Distance N -> B: 81
-Distance N -> C: No path
-Distance N -> D: No path
-Distance N -> E: No path
-Distance N -> F: No path
-Distance N -> G: No path
-Distance N -> H: No path
-Distance N -> I: No path
-Distance N -> J: No path
-Distance N -> K: No path
-Distance N -> L: No path
-Distance N -> M: No path
+Distance N -> C: -1, no path
+Distance N -> D: -1, no path
+Distance N -> E: -1, no path
+Distance N -> F: -1, no path
+Distance N -> G: -1, no path
+Distance N -> H: -1, no path
+Distance N -> I: -1, no path
+Distance N -> J: -1, no path
+Distance N -> K: -1, no path
+Distance N -> L: -1, no path
+Distance N -> M: -1, no path
 Distance N -> N: 0
-Distance N -> O: No path
+Distance N -> O: -1, no path
+Distance N -> P: -1, nonexistent place
+Distance N -> Q: -1, nonexistent place
+Distance N -> R: -1, nonexistent place
+Distance N -> S: -1, nonexistent place
+Distance N -> T: -1, nonexistent place
 
 Shortest paths from source O:
-Distance O -> A: No path
-Distance O -> B: No path
-Distance O -> C: No path
-Distance O -> D: No path
-Distance O -> E: No path
-Distance O -> F: No path
-Distance O -> G: No path
+Distance O -> A: 251
+Distance O -> B: 364
+Distance O -> C: 189
+Distance O -> D: 221
+Distance O -> E: 265
+Distance O -> F: 292
+Distance O -> G: 316
 Distance O -> H: 80
 Distance O -> I: 33
-Distance O -> J: No path
-Distance O -> K: No path
-Distance O -> L: No path
-Distance O -> M: No path
-Distance O -> N: No path
+Distance O -> J: 253
+Distance O -> K: 253
+Distance O -> L: 354
+Distance O -> M: 208
+Distance O -> N: 283
 Distance O -> O: 0
+Distance O -> P: -1, nonexistent place
+Distance O -> Q: -1, nonexistent place
+Distance O -> R: -1, nonexistent place
+Distance O -> S: -1, nonexistent place
+Distance O -> T: -1, nonexistent place
+
+Shortest paths from source P:
+Distance P -> A: -1, nonexistent place
+Distance P -> B: -1, nonexistent place
+Distance P -> C: -1, nonexistent place
+Distance P -> D: -1, nonexistent place
+Distance P -> E: -1, nonexistent place
+Distance P -> F: -1, nonexistent place
+Distance P -> G: -1, nonexistent place
+Distance P -> H: -1, nonexistent place
+Distance P -> I: -1, nonexistent place
+Distance P -> J: -1, nonexistent place
+Distance P -> K: -1, nonexistent place
+Distance P -> L: -1, nonexistent place
+Distance P -> M: -1, nonexistent place
+Distance P -> N: -1, nonexistent place
+Distance P -> O: -1, nonexistent place
+Distance P -> P: -1, nonexistent place
+Distance P -> Q: -1, nonexistent place
+Distance P -> R: -1, nonexistent place
+Distance P -> S: -1, nonexistent place
+Distance P -> T: -1, nonexistent place
+
+Shortest paths from source Q:
+Distance Q -> A: -1, nonexistent place
+Distance Q -> B: -1, nonexistent place
+Distance Q -> C: -1, nonexistent place
+Distance Q -> D: -1, nonexistent place
+Distance Q -> E: -1, nonexistent place
+Distance Q -> F: -1, nonexistent place
+Distance Q -> G: -1, nonexistent place
+Distance Q -> H: -1, nonexistent place
+Distance Q -> I: -1, nonexistent place
+Distance Q -> J: -1, nonexistent place
+Distance Q -> K: -1, nonexistent place
+Distance Q -> L: -1, nonexistent place
+Distance Q -> M: -1, nonexistent place
+Distance Q -> N: -1, nonexistent place
+Distance Q -> O: -1, nonexistent place
+Distance Q -> P: -1, nonexistent place
+Distance Q -> Q: -1, nonexistent place
+Distance Q -> R: -1, nonexistent place
+Distance Q -> S: -1, nonexistent place
+Distance Q -> T: -1, nonexistent place
+
+Shortest paths from source R:
+Distance R -> A: -1, nonexistent place
+Distance R -> B: -1, nonexistent place
+Distance R -> C: -1, nonexistent place
+Distance R -> D: -1, nonexistent place
+Distance R -> E: -1, nonexistent place
+Distance R -> F: -1, nonexistent place
+Distance R -> G: -1, nonexistent place
+Distance R -> H: -1, nonexistent place
+Distance R -> I: -1, nonexistent place
+Distance R -> J: -1, nonexistent place
+Distance R -> K: -1, nonexistent place
+Distance R -> L: -1, nonexistent place
+Distance R -> M: -1, nonexistent place
+Distance R -> N: -1, nonexistent place
+Distance R -> O: -1, nonexistent place
+Distance R -> P: -1, nonexistent place
+Distance R -> Q: -1, nonexistent place
+Distance R -> R: -1, nonexistent place
+Distance R -> S: -1, nonexistent place
+Distance R -> T: -1, nonexistent place
+
+Shortest paths from source S:
+Distance S -> A: -1, nonexistent place
+Distance S -> B: -1, nonexistent place
+Distance S -> C: -1, nonexistent place
+Distance S -> D: -1, nonexistent place
+Distance S -> E: -1, nonexistent place
+Distance S -> F: -1, nonexistent place
+Distance S -> G: -1, nonexistent place
+Distance S -> H: -1, nonexistent place
+Distance S -> I: -1, nonexistent place
+Distance S -> J: -1, nonexistent place
+Distance S -> K: -1, nonexistent place
+Distance S -> L: -1, nonexistent place
+Distance S -> M: -1, nonexistent place
+Distance S -> N: -1, nonexistent place
+Distance S -> O: -1, nonexistent place
+Distance S -> P: -1, nonexistent place
+Distance S -> Q: -1, nonexistent place
+Distance S -> R: -1, nonexistent place
+Distance S -> S: -1, nonexistent place
+Distance S -> T: -1, nonexistent place
+
+Shortest paths from source T:
+Distance T -> A: -1, nonexistent place
+Distance T -> B: -1, nonexistent place
+Distance T -> C: -1, nonexistent place
+Distance T -> D: -1, nonexistent place
+Distance T -> E: -1, nonexistent place
+Distance T -> F: -1, nonexistent place
+Distance T -> G: -1, nonexistent place
+Distance T -> H: -1, nonexistent place
+Distance T -> I: -1, nonexistent place
+Distance T -> J: -1, nonexistent place
+Distance T -> K: -1, nonexistent place
+Distance T -> L: -1, nonexistent place
+Distance T -> M: -1, nonexistent place
+Distance T -> N: -1, nonexistent place
+Distance T -> O: -1, nonexistent place
+Distance T -> P: -1, nonexistent place
+Distance T -> Q: -1, nonexistent place
+Distance T -> R: -1, nonexistent place
+Distance T -> S: -1, nonexistent place
+Distance T -> T: -1, nonexistent place
 
