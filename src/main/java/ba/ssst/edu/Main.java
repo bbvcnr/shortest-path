@@ -87,8 +87,7 @@ public class Main {
         FileWriter fw = new FileWriter("Report-" + filename + ".txt");
         ShortestPath dijkstra = new ShortestPath();
         fw.write("Constraints:\n");
-        dijkstra.dijkstraWithConstraints(g,Constraints.getConstraints());
-        fw.write(String.valueOf(ShortestPath.report));
+        fw.write(dijkstra.dijkstraWithConstraints(g,Constraints.getConstraints()));
         ShortestPath.resetReport();
         fw.close();
     }

@@ -3,8 +3,8 @@ package ba.ssst.edu;
 import java.util.*;
 
 public class ShortestPath {
-    public static StringBuilder report = new StringBuilder();
     private static final int infinity = 1000000;
+    public static StringBuilder report = new StringBuilder();
     public static void shortestPath(Graph graph, char source) {
         if (source<65 || source>=(65 + graph.nodes)){
 
@@ -66,6 +66,7 @@ public class ShortestPath {
 
     public static Graph applyConstraints(Graph graph, ArrayList<Constraints> constraints){
         double random = Math.random();
+        ArrayList<Constraints> c1 = new ArrayList<>();
         Graph withConstraints = new Graph(graph.nodes);
         withConstraints.copyGraph(graph);
         for (Constraints constraint: constraints) {
@@ -84,15 +85,18 @@ public class ShortestPath {
             }
         }
         report.append("\n");
+        withConstraints.printGraph();
         return withConstraints;
     }
 
-    public void dijkstraWithConstraints(Graph graph, ArrayList<Constraints> constraints){
+    public String dijkstraWithConstraints(Graph graph, ArrayList<Constraints> constraints){
+        resetReport();
         Graph g = new Graph(graph.nodes);
         g = applyConstraints(graph, constraints);
         for (int i=0; i< graph.nodes; i++){
-            shortestPath(graph, (char) (i + 65));
+            shortestPath(g, (char) (i + 65));
         }
+        return report.toString();
     }
 
     public static void resetReport() {
