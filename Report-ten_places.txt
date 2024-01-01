@@ -1,14 +1,26 @@
-Constraints:
-Path from A to B is disabled due to high constructions.
-Path from B to D is disabled due to fog.
-Path from C to I is disabled due to medics helicopter.
-Path from L to O is disabled due to high constructions.
-Path from N to M is disabled due to high constructions.
-Path from K to I is disabled due to fog.
-Path from K to L is disabled due to fog.
-Path from K to D is disabled due to fog.
-Path from E to F is disabled due to high constructions.
-Path from E to F is disabled due to medics helicopter.
+Path:
+Node A
+Node B: (B->T:92)
+Node C: (C->H:16), (C->K:64), (C->D:32)
+Node D: (D->E:44)
+Node E: (E->G:51), (E->R:27), (E->M:55), (E->N:18), (E->I:91), (E->S:42)
+Node F: (F->C:13), (F->S:94), (F->I:42), (F->T:85)
+Node G: (G->N:60), (G->C:2)
+Node H: (H->R:94), (H->O:66), (H->T:20)
+Node I: (I->O:87), (I->H:47), (I->T:74)
+Node J: (J->F:39), (J->E:38), (J->R:15)
+Node K: (K->J:44), (K->F:42)
+Node L: (L->K:82), (L->P:43), (L->C:14), (L->B:44)
+Node M: (M->J:45), (M->A:43)
+Node N: (N->B:81)
+Node O: (O->I:33), (O->T:24)
+Node P: (P->B:24), (P->D:30), (P->Q:48)
+Node Q: (Q->N:45), (Q->K:15)
+Node R: (R->M:34), (R->O:68), (R->C:15)
+Node S: (S->H:68), (S->D:32), (S->L:47), (S->O:61), (S->K:11)
+Node T
+
+No constraints applied
 
 Shortest paths from source A:
 Distance A -> A: 0

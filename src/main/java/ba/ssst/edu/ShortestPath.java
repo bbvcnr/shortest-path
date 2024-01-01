@@ -64,38 +64,44 @@ public class ShortestPath {
         report.append("\n");
     }
 
-    public static Graph applyConstraints(Graph graph, ArrayList<Constraints> constraints){
-        double random = Math.random();
-        ArrayList<Constraints> c1 = new ArrayList<>();
-        Graph withConstraints = new Graph(graph.nodes);
-        withConstraints.copyGraph(graph);
-        for (Constraints constraint: constraints) {
-            char csource = constraint.getSource();
-            char cdestination = constraint.getDestination();
-            int indexsrc = csource - 65;
-            int indexdest = cdestination - 65;
+    public static List<String> applyConstraints(Graph graph, ArrayList<Constraints> constraints) {
+        double globalRandomValue = Math.random();
+        List<String> appliedConstraints = new ArrayList<>();
 
-            if (indexsrc < graph.nodes && indexdest < graph.nodes) {
-                if (random < constraint.getProbability() && random != 0) {
-                    withConstraints.disablePath(csource, cdestination);
-                    report.append("Path from ").append(csource).append(" to ").append(cdestination).append(" is disabled due to ");
-                    if (Objects.equals(constraint.getConstraint(), "foggy")) report.append("fog.\n");
-                    else report.append(constraint.getConstraint()).append(".\n");
+        for (Constraints constraint : constraints) {
+            char source = constraint.getSource();
+            char destination = constraint.getDestination();
+
+            if (source >= 'A' && source < 'A' + graph.nodes && destination >= 'A' && destination < 'A' + graph.nodes) {
+                if (globalRandomValue < constraint.getProbability() && globalRandomValue != 0) {
+                    graph.disablePath(source, destination);
+                    appliedConstraints.add("Path from " + source + " to " + destination + " is disabled due to " + constraint.getConstraint());
                 }
             }
         }
-        report.append("\n");
-        withConstraints.printGraph();
-        return withConstraints;
+
+        return appliedConstraints;
     }
 
-    public String dijkstraWithConstraints(Graph graph, ArrayList<Constraints> constraints){
+    public String dijkstraWithConstraints(Graph graph, ArrayList<Constraints> constraints) {
         resetReport();
-        Graph g = new Graph(graph.nodes);
-        g = applyConstraints(graph, constraints);
-        for (int i=0; i< graph.nodes; i++){
-            shortestPath(g, (char) (i + 65));
+        List<String> appliedConstraints = applyConstraints(graph, constraints);
+        report.append(graph.toString()).append("\n");
+
+        if (appliedConstraints.isEmpty()) {
+            report.append("No constraints applied\n\n");
+        } else {
+            report.append("Applied constraints:\n");
+            for (String constraint : appliedConstraints) {
+                report.append(constraint).append("\n");
+            }
+            report.append("\n");
         }
+
+        for (int i = 0; i < graph.nodes; i++) {
+            shortestPath(graph, (char) (i + 65));
+        }
+
         return report.toString();
     }
 

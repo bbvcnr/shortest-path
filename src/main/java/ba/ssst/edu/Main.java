@@ -86,7 +86,7 @@ public class Main {
     public static void saveToReport(Graph g, String filename) throws IOException {
         FileWriter fw = new FileWriter("Report-" + filename + ".txt");
         ShortestPath dijkstra = new ShortestPath();
-        fw.write("Constraints:\n");
+        fw.write("Path:\n");
         fw.write(dijkstra.dijkstraWithConstraints(g,Constraints.getConstraints()));
         ShortestPath.resetReport();
         fw.close();

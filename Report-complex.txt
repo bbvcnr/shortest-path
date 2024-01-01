@@ -1,4 +1,9 @@
-Constraints:
+Path:
+Node A: (A->C:5), (A->B:32)
+Node B: (B->A:32), (B->C:36)
+Node C: (C->B:9), (C->A:75)
+
+No constraints applied
 
 Shortest paths from source A:
 Distance A -> A: 0

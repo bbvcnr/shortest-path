@@ -1,5 +1,27 @@
-Constraints:
-Path from B to D is disabled due to fog.
+Path:
+Node A: (A->F:98)
+Node B: (B->A:7)
+Node C: (C->E:25), (C->F:34), (C->D:97)
+Node D: (D->G:53), (D->H:63), (D->J:55)
+Node E
+Node F
+Node G: (G->N:39), (G->D:77), (G->I:64)
+Node H: (H->C:96)
+Node I: (I->B:94), (I->J:83), (I->M:26)
+Node J: (J->D:31), (J->N:25), (J->K:44), (J->M:96)
+Node K: (K->E:75), (K->N:14), (K->H:56), (K->J:79)
+Node L: (L->C:8), (L->G:51)
+Node M: (M->C:39)
+Node N: (N->F:68), (N->L:74)
+Node O: (O->C:31)
+
+Applied constraints:
+Path from B to D is disabled due to foggy
+Path from N to M is disabled due to high constructions
+Path from K to I is disabled due to foggy
+Path from K to L is disabled due to foggy
+Path from K to D is disabled due to foggy
+Path from E to F is disabled due to high constructions
 
 Shortest paths from source A:
 Distance A -> A: 0
@@ -172,18 +194,18 @@ Distance J -> N: 25
 Distance J -> O: -1, no path
 
 Shortest paths from source K:
-Distance K -> A: 282
-Distance K -> B: 275
-Distance K -> C: 74
+Distance K -> A: 304
+Distance K -> B: 297
+Distance K -> C: 96
 Distance K -> D: 110
 Distance K -> E: 75
 Distance K -> F: 82
-Distance K -> G: 117
+Distance K -> G: 139
 Distance K -> H: 56
-Distance K -> I: 181
+Distance K -> I: 203
 Distance K -> J: 79
 Distance K -> K: 0
-Distance K -> L: 66
+Distance K -> L: 88
 Distance K -> M: 175
 Distance K -> N: 14
 Distance K -> O: -1, no path

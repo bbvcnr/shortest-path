@@ -1,5 +1,21 @@
-Constraints:
-Path from B to D is disabled due to fog.
+Path:
+Node A: (A->F:20)
+Node B: (B->E:2), (B->N:97), (B->I:78), (B->K:90)
+Node C: (C->F:66), (C->E:99), (C->B:99)
+Node D: (D->E:68), (D->C:42), (D->B:45), (D->O:90), (D->N:95)
+Node E: (E->J:11), (E->K:57), (E->C:40)
+Node F: (F->K:27), (F->H:97), (F->O:12), (F->L:72), (F->M:26)
+Node G: (G->H:16), (G->O:57), (G->N:71)
+Node H: (H->F:67), (H->C:35), (H->G:30), (H->K:87)
+Node I: (I->L:22), (I->G:55), (I->M:92), (I->O:63), (I->B:8)
+Node J: (J->E:3), (J->M:68), (J->I:47), (J->F:72)
+Node K: (K->J:3), (K->L:12), (K->A:71), (K->O:93)
+Node L
+Node M: (M->B:97)
+Node N: (N->B:6)
+Node O: (O->K:38), (O->N:32), (O->D:4), (O->J:86), (O->M:35), (O->L:45), (O->I:68)
+
+No constraints applied
 
 Shortest paths from source A:
 Distance A -> A: 0

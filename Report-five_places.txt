@@ -1,5 +1,11 @@
-Constraints:
-Path from B to D is disabled due to fog.
+Path:
+Node A: (A->B:80), (A->C:55), (A->E:95), (A->D:63)
+Node B: (B->E:43), (B->D:23), (B->C:94), (B->A:83)
+Node C: (C->D:52), (C->B:26), (C->A:81), (C->E:23)
+Node D: (D->E:2), (D->C:35), (D->A:56), (D->B:43)
+Node E: (E->C:63), (E->B:89), (E->A:96), (E->D:90)
+
+No constraints applied
 
 Shortest paths from source A:
 Distance A -> A: 0

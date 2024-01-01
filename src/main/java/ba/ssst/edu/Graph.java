@@ -25,26 +25,21 @@ class Graph {
         }
     }
 
-    public Graph copyGraph(Graph g){
+    public Graph copyGraph() {
         Graph copy = new Graph(this.nodes);
         for (int i = 0; i < this.adjacencylist.length; i++) {
             copy.adjacencylist[i] = new LinkedList<>();
-            copy.adjacencylist[i].addAll(this.adjacencylist[i]);
+            for (Node node : this.adjacencylist[i]) {
+                copy.adjacencylist[i].add(new Node(node.source, node.destination, node.weight));
+            }
         }
         return copy;
     }
 
+
     public void addNode(char source, char destination, Integer weight) {
             Node node = new Node(source, destination, weight);
             adjacencylist[source - 65].addFirst(node);
-    }
-    public void printGraph(){
-        for (int i = 0; i <nodes ; i++) {
-            LinkedList<Node> list = adjacencylist[i];
-            for (Node node : list) {
-                System.out.println("Node " + node.source + " to node " + node.destination + " - " + node.weight + " seconds");
-            }
-        }
     }
 
     public void disablePath(char source, char destination) {
@@ -52,4 +47,19 @@ class Graph {
         adjacencylist[index].removeIf(node -> node.destination == destination);
     }
 
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < nodes; i++) {
+            char nodeChar = (char) (i + 65);
+            sb.append("Node ").append(nodeChar).append(": ");
+            LinkedList<Node> list = adjacencylist[i];
+            for (Node node : list) {
+                sb.append("(").append(node.source).append("->").append(node.destination).append(":").append(node.weight).append("), ");
+            }
+            sb.setLength(sb.length() - 2); // Remove trailing comma and space
+            sb.append("\n");
+        }
+        return sb.toString();
+    }
 }
